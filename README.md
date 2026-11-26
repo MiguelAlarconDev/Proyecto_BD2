@@ -112,6 +112,21 @@ El archivo `.env` está excluido de Git. **Nunca** se deben versionar credencial
 La aplicación inicia correctamente aunque las variables de conexión estén vacías
 o aunque `.env` no exista.
 
+## Gestión segura de credenciales
+
+Este repositorio es **público**. Ningún integrante del equipo debe subir al
+repositorio contraseñas, tokens, claves de API ni cadenas de conexión completas,
+en ningún archivo (código, documentación, notas, capturas o mensajes de commit).
+
+- Las credenciales se guardan solo en el archivo `.env` local de cada integrante.
+- `.env.example` contiene únicamente los **nombres** de las variables, con valores vacíos.
+- Las credenciales se comparten por un canal privado del equipo, nunca mediante Git.
+- En la documentación, usar marcadores como `mongodb+srv://<usuario>:<contraseña>@<host>/`.
+- Antes de cada commit, revisar `git status` y `git diff --cached`.
+- Si una credencial llega a publicarse, se debe **rotar de inmediato** en el servicio
+  correspondiente (MongoDB Atlas, Supabase). Eliminar el archivo no basta, porque el
+  valor permanece en el historial de Git.
+
 ## Ejecución local
 
 Desde la raíz del repositorio, con el entorno virtual activo:

@@ -1,7 +1,0 @@
- uri: mongodb+srv://<db_username>:<db_password>@proyecto-db2.coqwhao.mongodb.net/
-usuario: agroport_backend
-  password: OTDbpQKKKmZ2WAsz
-  nombre_bd: sample_mflix
-  nombre_coleccion: infraestructura_portuaria
-  
-  
