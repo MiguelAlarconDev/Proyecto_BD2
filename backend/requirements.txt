@@ -1,0 +1,13 @@
+# AgroPort Ica - Backend (Fase 1)
+# Python 3.14
+
+# Framework web y servidor ASGI
+fastapi==0.165.0
+uvicorn==0.54.0
+
+# Configuración mediante variables de entorno / .env
+pydantic-settings==2.16.3
+
+# Pruebas automatizadas (httpx es requerido por fastapi.testclient)
+pytest==9.2.0
+httpx==0.28.1
